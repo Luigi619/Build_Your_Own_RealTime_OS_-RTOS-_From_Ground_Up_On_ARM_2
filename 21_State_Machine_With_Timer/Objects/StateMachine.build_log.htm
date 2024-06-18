@@ -1,0 +1,298 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Luis Manuel Martinez Mendez, Kiran, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\STM\2.Realtime Operating Systems (RTOS) Learning Path\4.Build Your Own RealTime OS (RTOS) From Ground Up On ARM 2\21_State_Machine_With_Timer\StateMachine.uvprojx
+Project File Date:  06/17/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'STM32F407'
+compiling stm32f4xx_hal_pwr_ex.c...
+main.c(1): warning: In file included from...
+./uart.h(4): warning: // comments are not allowed in this language [-Wcomment]
+#include "stm32f4xx.h"                  // Device header
+                                        ^
+./uart.h(11): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+main.c(2): warning: // comments are not allowed in this language [-Wcomment]
+#include "stm32f4xx_hal.h"              // Keil::Device:STM32Cube HAL:Common
+                                        ^
+main.c(27): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+int main()
+        ^
+         void
+main.c(46): warning: no previous extern declaration for non-static variable 'stateA_prev_time' [-Wmissing-variable-declarations]
+uint32_t stateA_prev_time = 0;
+         ^
+main.c(46): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t stateA_prev_time = 0;
+^
+main.c(57): warning: implicit conversion from 'unsigned int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                stateA_delta = stateA_now - stateA_prev_time;
+                             ~ ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+main.c(61): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
+                printf("This is the output of STATE A: %f seconds ago\n\r",stateA_delta);
+                ~~~~~~                                                     ^~~~~~~~~~~~
+main.c(65): warning: no previous extern declaration for non-static variable 'stateB_prev_time' [-Wmissing-variable-declarations]
+uint32_t stateB_prev_time = 0;
+         ^
+main.c(65): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t stateB_prev_time = 0;
+^
+main.c(76): warning: implicit conversion from 'unsigned int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                stateB_delta = stateB_now - stateB_prev_time;
+                             ~ ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+main.c(80): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
+                printf("This is the output of STATE B: %f seconds ago\n\r",stateB_delta);
+                ~~~~~~                                                     ^~~~~~~~~~~~
+main.c(85): warning: no previous extern declaration for non-static variable 'stateC_prev_time' [-Wmissing-variable-declarations]
+uint32_t stateC_prev_time = 0;
+         ^
+main.c(85): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t stateC_prev_time = 0;
+^
+main.c(97): warning: implicit conversion from 'unsigned int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        stateC_delta = stateC_now - stateC_prev_time;
+                                     ~ ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+main.c(101): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
+                        printf("This is the output of STATE C: %f seconds ago\n\r",stateC_delta);
+                        ~~~~~~                                                     ^~~~~~~~~~~~
+main.c(111): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+main.c(108): warning: no previous prototype for function 'SysTick_Handler' [-Wmissing-prototypes]
+void SysTick_Handler(void)
+     ^
+main.c(108): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void SysTick_Handler(void)
+^
+static 
+main.c(47): warning: no previous extern declaration for non-static variable 'stateA_now' [-Wmissing-variable-declarations]
+uint32_t stateA_now;
+         ^
+main.c(47): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t stateA_now;
+^
+main.c(48): warning: no previous extern declaration for non-static variable 'stateA_delta' [-Wmissing-variable-declarations]
+float stateA_delta;
+      ^
+main.c(48): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+float stateA_delta;
+^
+main.c(66): warning: no previous extern declaration for non-static variable 'stateB_now' [-Wmissing-variable-declarations]
+uint32_t stateB_now;
+         ^
+main.c(66): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t stateB_now;
+^
+main.c(67): warning: no previous extern declaration for non-static variable 'stateB_delta' [-Wmissing-variable-declarations]
+float stateB_delta;
+      ^
+main.c(67): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+float stateB_delta;
+^
+main.c(86): warning: no previous extern declaration for non-static variable 'stateC_now' [-Wmissing-variable-declarations]
+uint32_t stateC_now;
+         ^
+main.c(86): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t stateC_now;
+^
+main.c(87): warning: no previous extern declaration for non-static variable 'stateC_delta' [-Wmissing-variable-declarations]
+float stateC_delta;
+      ^
+main.c(87): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+float stateC_delta;
+^
+21 warnings generated.
+compiling main.c...
+compiling system_stm32f4xx.c...
+assembling startup_stm32f407xx.s...
+compiling stm32f4xx_hal.c...
+C:/Users/luism/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c(379): warning: unused parameter 'Regulator' [-Wunused-parameter]
+void HAL_PWR_EnterSLEEPMode(uint32_t Regulator, uint8_t SLEEPEntry)
+                                     ^
+1 warning generated.
+compiling stm32f4xx_hal_pwr.c...
+uart.c(1): warning: In file included from...
+./uart.h(4): warning: // comments are not allowed in this language [-Wcomment]
+#include "stm32f4xx.h"                  // Device header
+                                        ^
+./uart.h(11): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+uart.c(7): warning: // comments are not allowed in this language [-Wcomment]
+//1 Enable clock access to portA
+^
+uart.c(12): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOA->MODER &= ~0x00F0;
+                     ~~ ^~~~~~~
+uart.c(15): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOA->AFR[0] &= ~0xFF00;
+                      ~~ ^~~~~~~
+uart.c(28): warning: no previous prototype for function 'USART2_Write' [-Wmissing-prototypes]
+int USART2_Write(int ch)
+    ^
+uart.c(28): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int USART2_Write(int ch)
+^
+static 
+uart.c(38): warning: implicit conversion changes signedness: 'volatile uint32_t' (aka 'volatile unsigned int') to 'int' [-Wsign-conversion]
+        return USART2->DR;
+        ~~~~~~ ~~~~~~~~^~
+uart.c(35): warning: no previous prototype for function 'USART2_Read' [-Wmissing-prototypes]
+int USART2_Read(void)
+    ^
+uart.c(35): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int USART2_Read(void)
+^
+static 
+uart.c(49): warning: unused parameter 'f' [-Wunused-parameter]
+        int fgetc(FILE *f)
+                        ^
+uart.c(62): warning: unused parameter 'stream' [-Wunused-parameter]
+        int fputc(int c, FILE *stream)
+                               ^
+uart.c(67): warning: unused parameter 'stream' [-Wunused-parameter]
+        int ferror (FILE *stream)
+                          ^
+uart.c(72): warning: unused parameter 'stream' [-Wunused-parameter]
+        long int ftell(FILE *stream)
+                             ^
+uart.c(76): warning: unused parameter 'f' [-Wunused-parameter]
+        int fclose(FILE *f)
+                         ^
+uart.c(80): warning: unused parameter 'f' [-Wunused-parameter]
+        int fseek(FILE *f, long nPos, int nMode)
+                        ^
+uart.c(80): warning: unused parameter 'nPos' [-Wunused-parameter]
+        int fseek(FILE *f, long nPos, int nMode)
+                                ^
+uart.c(80): warning: unused parameter 'nMode' [-Wunused-parameter]
+        int fseek(FILE *f, long nPos, int nMode)
+                                          ^
+uart.c(84): warning: unused parameter 'f' [-Wunused-parameter]
+        int fflush(FILE *f)
+                         ^
+uart.c(104): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+uart.c(91): warning: no previous extern declaration for non-static variable 'n' [-Wmissing-variable-declarations]
+int n;
+    ^
+uart.c(91): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int n;
+^
+19 warnings generated.
+compiling uart.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+C:/Users/luism/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c(215): warning: function 'HAL_NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+C:/Users/luism/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c(81): warning: In file included from...
+C:/Users/luism/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(29): warning: In file included from...
+./RTE/Device/STM32F407VGTx\stm32f4xx_hal_conf.h(401): warning: In file included from...
+C:/Users/luism/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_cortex.h(52): warning: padding struct 'MPU_Region_InitTypeDef' with 2 bytes to align 'BaseAddress' [-Wpadded]
+  uint32_t               BaseAddress;           /*!< Specifies the base address of the region to protect.                           */
+                         ^
+2 warnings generated.
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal_rcc.c...
+linking...
+Program Size: Code=8520 RO-data=1120 RW-data=24 ZI-data=1768  
+".\Objects\StateMachine.axf" - 0 Error(s), 43 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.0.pack
+                Keil.STM32F4xx_DFP.2.17.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: STM32Cube Framework Version: 1.0.0
+   * Component: Classic Version: 1.8.1
+   * Component: Common Version: 1.8.1
+   * Component: Cortex Version: 1.8.1
+   * Component: GPIO Version: 1.8.1
+   * Component: PWR Version: 1.8.1
+   * Component: RCC Version: 1.8.1
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/STM32F407VGTx
+  ./RTE/_STM32F407
+  C:/Users/luism/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/luism/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+  C:/Users/luism/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/STM32F4xx_HAL_Driver/Inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::Device:STM32Cube Framework:1.0.0 (API)
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:STM32Cube Framework:Classic:1.8.1
+      Source file:   MDK/Templates/Src/stm32f4xx_hal_msp.c
+      Include file:  CMSIS/Driver/Config/RTE_Device.h
+      Source file:   MDK/Templates_LL/Src/main.c
+      Source file:   MDK/Templates/Src/main.c
+      Include file:  MDK/Templates_LL/Inc/main.h
+      Include file:  MDK/Templates/Inc/stm32f4xx_hal_conf.h
+      Include file:  MDK/Templates/Inc/stm32f4xx_it.h
+      Include file:  MDK/Templates/Inc/main.h
+      Source file:   MDK/Templates/Src/stm32f4xx_it.c
+
+   * Component: Keil::Device:STM32Cube HAL:Common:1.8.1
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
+      Include file:  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+
+   * Component: Keil::Device:STM32Cube HAL:Cortex:1.8.1
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
+
+   * Component: Keil::Device:STM32Cube HAL:GPIO:1.8.1
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
+
+   * Component: Keil::Device:STM32Cube HAL:PWR:1.8.1
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
+
+   * Component: Keil::Device:STM32Cube HAL:RCC:1.8.1
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f407xx.s
+      Source file:   MDK/Device/Source/ARM/STM32F40xxx_41xxx_OPT.s
+      Source file:   MDK/Device/Source/ARM/STM32F4xx_OTP.s
+      Include file:  Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
