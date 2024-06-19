@@ -1,28 +1,35 @@
-# Free-RTOS 
-## STM32F4 Free-RTOS
-
-1.Task Creation
-2.Creating Task from Other Task
-3.Task Parameters
-4.Task Priority
-5.Changing Priority In Runtime
-6.Changing Own Priority
-7.Getting Task Priority
-8.Suspending a Task
-9.Resuming a Task
-10.Blocking a Task
-11.Executing Task Periodically
-12.Killing a Task
-13.Idle Task
-14.Working with Queues
-15.Synching Queues
-16.Sending Complex Data with Queues
-17.Working with Queue sets
-18.Binary Semaphore
-19.Some Drivers
-20.Mutex Semaphores
-21.Counting Semaphores
-22.Gatekeeper
+#  Build Your Own RealTime OS-RTOS-From Ground Up On ARM 2
+## STM32F407VG Disc1 Build your real time OS RTOS Continue part 2
+### Round Robin Scheduler Recap
+1.RoundRobin v1
+2.Cooperative Schedulers
+3.PendSV Scheduler
+### Period Scheduling
+4.Periodic Scheduler v1
+5.Periodic Scheduler v1 Multiple Threads
+6.Periodic Scheduler v2 Hardware Interrupts
+7.Periodic Scheduler v3 Periodic TCB
+8.Periodic Scheduler v3 Periodic TCB Hardware Int
+### Board Support Package (BSP)
+9.BSP(Board Support Packe)
+### Inter-Thread Communication
+10.Creating Spinlock Semaphore API
+11.Creating Spinlock Semaphore API LCD Test
+12.Rendevous
+13.Cooperative Semaphore
+14.Creating Thread Sleep API
+### Inter-Thread Data Transfer
+15.Mailbox
+16.Inter Thread Comm With FIFO
+### Sporadic Scheduling
+17.Executing Sporadic Threads
+### Priority Scheduling
+18.Priority Scheduler
+### Fixed Scheduling
+19.UART Driver
+20.State Machine
+21.State Machine With Timer
+22.State_Machine With Timer V2
 23.Working with Software Timers
 24.Stopping the Software Timers
 25.Interracting with Drivers UARTRx
