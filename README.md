@@ -30,26 +30,4 @@
 20.State Machine
 21.State Machine With Timer
 22.State_Machine With Timer V2
-23.Working with Software Timers
-24.Stopping the Software Timers
-25.Interracting with Drivers UARTRx
-26.Interracting with Drivers UARTRx Interrups
-27.UARTRx Interrupt Receiving Packets
-28.Event Groups
-29.Event Groups with Multiple Setters
-30.Synching Task with event Groups
-31.Task Notifications
-32.The Scheduler Preemption Only
-33.The Scheduler Pseudo Time Slicing
-34.CMSIS-RTOS Thread
-35.CMSIS-RTOS Thread Priority
-36.CMSIS-RTOS Thread Suspend
-37.CMSIS-RTOS Thread Resumen
-38.CMSIS-RTOS Thread Terminate
-39.CMSIS-RTOS osDelay
-40.CMSIS-RTOS osTimer
-41.CMSIS-RTOS osSemaphores
-42.CMSIS-RTOS osMutex
-43.CMSIS-RTOS Message Queues
-44.CMSIS-RTOS Event Flags
 
